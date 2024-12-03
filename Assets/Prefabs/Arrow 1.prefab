@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 38119734715351787}
   - component: {fileID: 6921364206010098551}
   - component: {fileID: 4000592515094354675}
-  - component: {fileID: -1254293833640336524}
   - component: {fileID: 127480696415214174}
   - component: {fileID: 5249920865917983967}
+  - component: {fileID: -2887414187924451413}
   m_Layer: 0
-  m_Name: Arrow
+  m_Name: Arrow 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,19 +108,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-1254293833640336524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3468629972635077211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a91c45a01c9487f4d9b251bf149bdf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
 --- !u!114 &127480696415214174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,3 +132,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb885de9627016643a3631dea4f1d931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2887414187924451413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468629972635077211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94ad0f32c57a844cb69ec404c0985f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15

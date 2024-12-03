@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public float speed = 10.0f;
     public GameObject arrowPrefab;
+    public GameObject arrowPrefab2;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
             Instantiate(arrowPrefab, transform.position, arrowPrefab.transform.rotation);
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Instantiate(arrowPrefab2, transform.position, arrowPrefab.transform.rotation);
         }
     }
 }
