@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public GameObject arrowPrefab;
     public GameObject arrowPrefab2;
+    public float fireRate;
+    private float nextFire;
 
     // Start is called before the first frame update
     void Start()
@@ -26,14 +28,22 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
 
 
-        if (Input.GetKeyDown(KeyCode.L))
+        if ((Input.GetKeyDown(KeyCode.L)) && Time.time > nextFire)
         {
+            nextFire = Time.time + fireRate;
             Instantiate(arrowPrefab, transform.position, arrowPrefab.transform.rotation);
+            
+        }
+        
+        if ((Input.GetKeyDown(KeyCode.K)) && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(arrowPrefab2, transform.position, arrowPrefab.transform.rotation);
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Instantiate(arrowPrefab2, transform.position, arrowPrefab.transform.rotation);
+            Application.Quit();
         }
     }
 }
